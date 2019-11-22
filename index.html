@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <title>::::: ESCOLA :::::</title>
+
+    <style>
+    .sumir {
+        opacity: 0;
+        transition: 2s;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="wr-site">
+        <div class="navbar navbar-expand navbar-light bg-info">
+            <h1 class="text-white">Escola 1.0</h1>
+        </div>
+
+        <div class="container mt-3">
+            <h3>Média escolar</h3>
+            <hr />
+            <ul id="lista-erros" class="alert-warning text-danger"></ul>  
+            
+            <form id="formulario">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="nome">Nome do Aluno: </label>
+                        <input type="text" class="form-control" placeholder="Nome do Aluno" id="nome" name="nome" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="nota1">Nota 1: </label>
+                        <input type="text" class="form-control" placeholder="Nota 1" name="nota1" id="nota1" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="nota2">Nota 2: </label>
+                        <input type="text" class="form-control" placeholder="Nota 2" name="nota2" id="nota2" />
+                    </div>
+                    <div class="col-md-3">
+                        <label>&nbsp;</label>
+                        <button class="btn btn-primary form-control" id="botao_adicionar">Adicionar</button>
+                    </div>
+                </div>
+            </form>
+
+            <table id="tabela" class="table table-bordered table-hover mt-3">
+                <thead class="table-info">
+                    <tr>
+                        <th>Aluno</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Média</th>
+                        <th>Situação</th>
+                        <td class="text-center">&nbsp;</td>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/calculo.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/validacao.js"></script>
+
+
+
+</body>
+
+</html>
